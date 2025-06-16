@@ -1,0 +1,103 @@
+@font-face {
+  font-family: Norse;
+  src: url(Norse-Bold.otf);
+}
+
+body {
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  font-family: "Helvetica", "Arial", sans-serif;
+}
+
+#background {
+  /* width: 300px; */
+  height: 100vh;
+  position: relative;
+  grid-column: 1/2;
+}
+
+#picture-background {
+  background-image: url(img/daniel-sessler-I4YjrybA_1Q-unsplash.jpg);
+  height: 100%;
+  width: 100%;
+  /* resize: both; */
+  /* overflow: scroll; */
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+}
+
+#logo-background {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  top: 25vh;
+  padding: 10px 0;
+}
+
+img {
+  height: 100px;
+}
+
+#title {
+  font-family: Norse;
+  color: aliceblue;
+  font-size: 5rem;
+  margin-top: 10px;
+}
+
+#picture-credit {
+  position: absolute;
+  bottom: 1vh;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+}
+
+#picture-credit,
+#picture-credit a {
+  color: aliceblue;
+  font-size: 10px;
+}
+
+#main-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* width: 800px */
+  background-color: rgb(241, 241, 241);
+}
+
+h1 {
+  font-size: 20px;
+}
+
+header {
+  padding: 0 20px 50px 50px;
+}
+
+.form-body {
+  padding: 10px 50px 40px 50px;
+  background-color: white;
+  box-shadow: 0 4px 2px -2px lightgrey;
+}
+
+.form-row {
+  display: flex;
+  justify-content: left;
+}
+
+footer {
+  padding: 20px 0 0 50px;
+}
+
+footer p {
+  font-size: 12px;
+}
+
+footer a {
+  text-decoration: none;
+}
